@@ -1,0 +1,15 @@
+fibonacci1 = 1
+fibonacci2 = 2
+nextFibonacci = fibonacci1 + fibonacci2
+sum = 2
+do while nextFibonacci < 4000000
+	if (nextFibonacci // 2 == 0) then
+		sum = sum + nextFibonacci
+	fibonacci1 = fibonacci2
+	fibonacci2 = nextFibonacci
+	nextFibonacci = fibonacci1 + fibonacci2
+end
+
+say sum
+
+say TIME(J)
