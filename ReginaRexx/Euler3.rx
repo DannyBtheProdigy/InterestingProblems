@@ -1,0 +1,20 @@
+NUMERIC DIGITS 12
+
+number = 600851475143
+half = number / 2
+test = 2
+
+do while test < half
+	if  (number // test) == 0 then
+		do
+			number = number / test
+			half = number / 2
+			test = 2
+		end
+	else
+		test = test + 1
+end
+
+say number
+
+say TIME(J)

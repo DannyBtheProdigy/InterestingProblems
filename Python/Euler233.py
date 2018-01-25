@@ -4,23 +4,14 @@ import math
 start = time.clock()
 
 n = 105
+end = math.pow(10, 11)
+count = 0
+while n <= end:
+    r2 = 2 * ((n / 2.0) * (n / 2.0))
+    angle = 360.0 / 420.0
+    n = n + 105    
 
-sum = 0
-while n < 100000000000:
-    x = 0
-    integerCoordinates = 0
-    while x < n:
-        if integerCoordinates > 105:
-            break
-        y = math.sqrt(math.pow(n, 2) - math.pow(x, 2))
-        if math.floor(y) == y:
-            integerCoordinates = integerCoordinates + 1
-        x = x + 1
-    if integerCoordinates == 105:
-        sum = sum + n
-    n = n + 1
-
-print integerCoordinates * 4    
+print count
 
 end = time.clock()
 print end - start
